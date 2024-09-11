@@ -4,6 +4,12 @@
 ## Reboot system
 sudo reboot
 
+## Change laptop password
+passwd
+
+## Change laptop host name
+sudo scutil --set HostName Galaxy
+
 ## Install Homebrew package manager
 xcode-select --install
 
@@ -28,21 +34,30 @@ brew install wget
 
 ## Remove temporary or unused files
 brew autoremove
+brew cleanup
 
 ## Install Anaconda python
 shasum -a 256 Anaconda3-2024.02-1-MacOSX-arm64.sh
 
 bash Anaconda3-2024.02-1-MacOSX-arm64.sh
 
-## Change laptop host name
-sudo scutil --set HostName Galaxy
+## Activate or deactivate conda
+conda activate
+conda deactivate
 
 ## Install python packages
 pip install gala
 
 pip install pynbody
 
-## Add new executable apps to app list [solve 'app is damaged or can’t be opened' problem]
+## Add new executable apps to app list 
+#### (solve 'app is damaged or can’t be opened' problem)
 xattr -c /Applications/SAOImageDS9.app
 
 xattr -c /Applications/FV.app
+
+## Connecting to ssh or sftp
+ssh -X user_name@host_address
+sftp user_name@host_address
+
+## 
