@@ -1,7 +1,7 @@
 # useful terminal commands for macos
 #### (I created this file to save the list of commands I use/used on my macos. I will be regularly updating this file.)
 
-## reboot system*
+<h2 style="color:red;">reboot system</h2>
 sudo reboot
 
 ## Install Homebrew package manager
