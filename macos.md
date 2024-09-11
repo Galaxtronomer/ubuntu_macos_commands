@@ -7,6 +7,8 @@ sudo reboot
 ## Change laptop password
 passwd
 
+security set-keychain-password
+
 ## Change laptop host name
 sudo scutil --set HostName Galaxy
 
@@ -34,6 +36,7 @@ brew install wget
 
 ## Remove temporary or unused files
 brew autoremove
+
 brew cleanup
 
 ## Install Anaconda python
@@ -43,6 +46,7 @@ bash Anaconda3-2024.02-1-MacOSX-arm64.sh
 
 ## Activate or deactivate conda
 conda activate
+
 conda deactivate
 
 ## Install python packages
@@ -56,8 +60,27 @@ xattr -c /Applications/SAOImageDS9.app
 
 xattr -c /Applications/FV.app
 
+## Enable ssh login
+sudo systemsetup -getremotelogin
+
+sudo systemsetup -setremotelogin on
+
+_To disable_
+
+sudo systemsetup -setremotelogin off
+
 ## Connecting to ssh or sftp
 ssh -X user_name@host_address
+
 sftp user_name@host_address
 
-## 
+## Disable icon preview in finder
+defaults write com.apple.finder ShowIconPreview -bool false
+
+killall Finder
+
+## Get your ip address at specific network
+ipconfig getifaddr en0
+
+## Get your public ip address
+curl ifconfig.me
