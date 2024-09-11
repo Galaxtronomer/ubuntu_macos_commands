@@ -34,6 +34,16 @@ brew install openssh
 
 brew install wget
 
+brew install ghostscript
+
+brew install ffmpeg
+
+brew install --cask gimp
+
+brew install --cask gedit
+
+brew install gh
+
 ## Remove temporary or unused files
 brew autoremove
 
@@ -54,18 +64,24 @@ pip install gala
 
 pip install pynbody
 
+pip install kivy
+
+pip install buildozer
+
 ## Add new executable apps to app list 
 #### (solve 'app is damaged or can’t be opened' problem)
 xattr -c /Applications/SAOImageDS9.app
 
 xattr -c /Applications/FV.app
 
-## Enable ssh login
+## Enable or diable ssh login
 sudo systemsetup -getremotelogin
+
+(To enable)
 
 sudo systemsetup -setremotelogin on
 
-_To disable_
+(To disable)
 
 sudo systemsetup -setremotelogin off
 
@@ -73,6 +89,9 @@ sudo systemsetup -setremotelogin off
 ssh -X user_name@host_address
 
 sftp user_name@host_address
+
+## Generate ssh key
+ssh-keygen -R host_address
 
 ## Disable icon preview in finder
 defaults write com.apple.finder ShowIconPreview -bool false
@@ -84,3 +103,24 @@ ipconfig getifaddr en0
 
 ## Get your public ip address
 curl ifconfig.me
+
+## Install mac port package manager
+(first download and install macport installer and then)
+
+sudo port selfupdate
+
+sudo port upgrade outdated
+
+## Installing and uninstalling package using mac port
+sudo port install gedit
+
+sudo port uninstall gedit
+
+## Count files in working folder
+ls -1 | wc -l
+
+## Finding files containing specific word in files with specific extension
+grep -rnw handles *.py
+
+## Directories size ignoring permission denied messages
+sudo du -h -d 1 / 2>/dev/null
