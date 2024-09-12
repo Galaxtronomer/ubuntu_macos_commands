@@ -11,7 +11,11 @@ brew install sdl2_image
 
 sudo port install mathgl
 
+(install xcode from app store befor qt installation)
+
 brew install qt
+
+sudo port install qt4-mac
 
 ## verify required packages
 brew info cmake
@@ -26,6 +30,6 @@ brew info sdl2_image
 
 port contents mathgl
 
-(install xcode from app store befor qt installation)
-
 brew info qt
+
+port contents qt4-mac
