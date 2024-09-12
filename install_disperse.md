@@ -26,4 +26,6 @@ brew info sdl2_image
 
 port contents mathgl
 
+(install xcode from app store befor qt installation)
+
 brew info qt
