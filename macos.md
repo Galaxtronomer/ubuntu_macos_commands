@@ -63,6 +63,9 @@ sudo port install gedit
 
 sudo port uninstall gedit
 
+## Know the containing directory of a package
+brew --prefix cmake
+
 ## Install Anaconda python
 shasum -a 256 Anaconda3-2024.02-1-MacOSX-arm64.sh
 
