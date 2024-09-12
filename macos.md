@@ -23,7 +23,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew help
 
-## Install packages using brew
+## Install and uninstall packages using brew
 brew update
 
 brew upgrade
@@ -40,14 +40,28 @@ brew install ffmpeg
 
 brew install --cask gimp
 
+brew install gh
+
 brew install --cask gedit
 
-brew install gh
+brew uninstall gedit
 
 ## Remove temporary or unused files
 brew autoremove
 
 brew cleanup
+
+## Install mac port package manager
+(first download and install macport installer and then)
+
+sudo port selfupdate
+
+sudo port upgrade outdated
+
+## Install and uninstall package using mac port
+sudo port install gedit
+
+sudo port uninstall gedit
 
 ## Install Anaconda python
 shasum -a 256 Anaconda3-2024.02-1-MacOSX-arm64.sh
@@ -103,18 +117,6 @@ ipconfig getifaddr en0
 
 ## Get your public ip address
 curl ifconfig.me
-
-## Install mac port package manager
-(first download and install macport installer and then)
-
-sudo port selfupdate
-
-sudo port upgrade outdated
-
-## Installing and uninstalling package using mac port
-sudo port install gedit
-
-sudo port uninstall gedit
 
 ## Count files in working folder
 ls -1 | wc -l
