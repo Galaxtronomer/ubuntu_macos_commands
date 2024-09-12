@@ -1,4 +1,4 @@
-## install require packages
+## install required packages
 brew install cmake
 
 brew install gsl
