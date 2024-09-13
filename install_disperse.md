@@ -33,3 +33,16 @@ port contents mathgl
 brew info qt
 
 port contents qt4-mac
+
+## make DisPerSE
+unzip DisPerSE-master.zip
+
+cd DisPerSE-master
+
+mkdir build
+
+cd build
+
+cmake ../
+
+make install -j 4
