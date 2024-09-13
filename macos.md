@@ -66,6 +66,8 @@ sudo port uninstall gedit
 ## Know the containing directory of a package
 brew --prefix cmake
 
+port contents gedit
+
 ## Install Anaconda python
 shasum -a 256 Anaconda3-2024.02-1-MacOSX-arm64.sh
 
@@ -123,6 +125,19 @@ curl ifconfig.me
 
 ## Count files in working folder
 ls -1 | wc -l
+
+## Check any issue with brew
+brew doctor
+
+## Link the unlinked kegs
+brew link glib
+
+brew link qt
+
+(or)
+
+brew link --force glib
+brew link --force qt
 
 ## Finding files containing specific word in files with specific extension
 grep -rnw handles *.py
