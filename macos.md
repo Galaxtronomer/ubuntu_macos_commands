@@ -145,7 +145,7 @@ grep -rnw handles *.py
 ## Directories size ignoring permission denied messages
 sudo du -h -d 1 / 2>/dev/null
 
-## See first few line of a file (default 10 lines) without opening
+## See first few lines of a file (default 10 lines) without opening
 head file_name
 
 head -n 20 file_name
