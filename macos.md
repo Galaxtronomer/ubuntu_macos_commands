@@ -176,3 +176,6 @@ tar -czvf dir_rname.tar.gz dir_name/
 
 ## Unzip a tar file
 tar -xzvf filename.tar.gz
+
+## find a keyword in specific files (say in file with .txt extension)
+grep -rnw keyword *.txt
