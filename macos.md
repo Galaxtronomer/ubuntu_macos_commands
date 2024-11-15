@@ -157,3 +157,10 @@ sips -s format pdf preprogram.png --out preprogram.pdf
 pdfunite infile1.pdf infile2.pdf infile3.pdf outfile.pdf
 
 pdfunite infile*.pdf outfile.pdf
+
+## decript an encripted PDF file
+(install qpdf, if not already)
+
+brew install qpdf
+
+qpdf --decrypt encripted.pdf decripted.pdf
