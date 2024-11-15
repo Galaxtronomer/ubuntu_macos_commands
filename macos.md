@@ -149,3 +149,11 @@ sudo du -h -d 1 / 2>/dev/null
 head file_name
 
 head -n 20 file_name
+
+## Change png to pdf
+sips -s format pdf preprogram.png --out preprogram.pdf
+
+## Join multiple PDFs
+pdfunite infile1.pdf infile2.pdf infile3.pdf outfile.pdf
+
+pdfunite infile*.pdf outfile.pdf
