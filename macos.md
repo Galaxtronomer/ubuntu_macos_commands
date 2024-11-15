@@ -164,3 +164,15 @@ pdfunite infile*.pdf outfile.pdf
 brew install qpdf
 
 qpdf --decrypt encripted.pdf decripted.pdf
+
+## Zip directory
+zip -r dir_name.zip dir_name
+
+## Unzip a file
+unzip filename.zip
+
+## zip a tar directory
+tar -czvf dir_rname.tar.gz dir_name/
+
+## Unzip a tar file
+tar -xzvf filename.tar.gz
