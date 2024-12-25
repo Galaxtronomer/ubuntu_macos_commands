@@ -1,4 +1,6 @@
 ## install required packages
+brew install gcc
+
 brew install cmake
 
 brew install gsl
