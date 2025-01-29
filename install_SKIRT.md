@@ -37,7 +37,7 @@ chmod +rx makeSKIRT.sh
 export PATH="${HOME}/SKIRT/release/SKIRT/main:${PATH}"
 
 -------------------------------------------------
-#Installing PTS
+# Installing PTS
 -------------------------------------------------
 ## Get the PTS code
 cd
