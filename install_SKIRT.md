@@ -7,3 +7,14 @@
 
 export PATH="/Applications/CMake.app/Contents/bin:${PATH}"
 
+## Get the SKIRT code
+
+mkdir SKIRT
+
+cd SKIRT
+
+mkdir release run git
+
+git clone https://github.com/SKIRT/SKIRT9.git git
+
+## Configure and build the code
