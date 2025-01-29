@@ -1,5 +1,5 @@
 -------------------------------------------------
-# Installing SKIRT
+# *Installing SKIRT*
 -------------------------------------------------
 ## Install required packages
 (install CMake)
