@@ -1,3 +1,6 @@
+-------------------------------------------------
+# Installing SKIRT
+-------------------------------------------------
 ## Install required packages
 (install CMake)
 
@@ -32,3 +35,26 @@ chmod +rx makeSKIRT.sh
 
 ## Finalize the installation
 export PATH="${HOME}/SKIRT/release/SKIRT/main:${PATH}"
+
+-------------------------------------------------
+#Installing PTS
+-------------------------------------------------
+## Get the PTS code
+cd
+
+mkdir PTS
+
+cd PTS
+
+mkdir run pts
+
+## Configuring PTS paths and aliases
+export PYTHONPATH=~/PTS
+
+alias pts="python -m pts.do"
+
+## Testing the PTS installation
+pts try me
+
+## Listing Python package dependencies
+pts list_dependencies
