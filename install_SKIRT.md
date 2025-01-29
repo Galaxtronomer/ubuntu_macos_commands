@@ -1,5 +1,5 @@
-## install required packages
-(Install CMake)
+## Install required packages
+(install CMake)
 
 (download '.dmg' file from https://cmake.org/download/, and install by opening it and dragging "CMake.app" to the Application folder)
 
@@ -8,7 +8,6 @@
 export PATH="/Applications/CMake.app/Contents/bin:${PATH}"
 
 ## Get the SKIRT code
-
 mkdir SKIRT
 
 cd SKIRT
@@ -18,3 +17,10 @@ mkdir release run git
 git clone https://github.com/SKIRT/SKIRT9.git git
 
 ## Configure and build the code
+cd git
+
+chmod +rx configSKIRT.sh
+
+chmod +rx makeSKIRT.sh
+
+./makeSKIRT.sh
