@@ -36,6 +36,8 @@ chmod +rx makeSKIRT.sh
 ## Finalize the installation
 export PATH="${HOME}/SKIRT/release/SKIRT/main:${PATH}"
 
+skirt
+
 ---
 # 2. **Installing PTS**
 ---
