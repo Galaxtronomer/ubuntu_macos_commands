@@ -1,5 +1,5 @@
 ---
-# -**Installing SKIRT**
+# - **Installing SKIRT**
 ---
 ## Install required packages
 (install CMake)
@@ -36,9 +36,9 @@ chmod +rx makeSKIRT.sh
 ## Finalize the installation
 export PATH="${HOME}/SKIRT/release/SKIRT/main:${PATH}"
 
--------------------------------------------------
-# Installing PTS
--------------------------------------------------
+---
+# - **Installing PTS**
+---
 ## Get the PTS code
 cd
 
