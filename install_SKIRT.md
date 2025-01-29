@@ -8,6 +8,8 @@
 export PATH="/Applications/CMake.app/Contents/bin:${PATH}"
 
 ## Get the SKIRT code
+cd
+
 mkdir SKIRT
 
 cd SKIRT
@@ -24,3 +26,9 @@ chmod +rx configSKIRT.sh
 chmod +rx makeSKIRT.sh
 
 ./makeSKIRT.sh
+
+## Download the SKIRT resource files
+./downloadResources.sh
+
+## Finalize the installation
+export PATH="${HOME}/SKIRT/release/SKIRT/main:${PATH}"
