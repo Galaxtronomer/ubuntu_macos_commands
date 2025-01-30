@@ -179,3 +179,6 @@ tar -xzvf filename.tar.gz
 
 ## Search a keyword in specific files (say in file with .txt extension)
 grep -rnw keyword *.txt
+
+## Generating track change file in latex
+latexdiff main_backup.tex main.tex > main_diff.tex
