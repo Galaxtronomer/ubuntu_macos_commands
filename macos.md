@@ -182,3 +182,13 @@ grep -rnw keyword *.txt
 
 ## Generating track change file in latex
 latexdiff main_backup.tex main.tex > main_diff.tex
+
+## Checking spelling
+(count misspelled in US)
+
+aspell --lang=en_US list < main_aanda.tex | wc -l
+
+(count misspelled in UK)
+
+aspell --lang=en_GB list < main_aanda.tex | wc -l
+
