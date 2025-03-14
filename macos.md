@@ -196,6 +196,6 @@ aspell --lang=en_GB list < main_aanda.tex | wc -l
 
 aspell --lang=en_US list < yourfile.txt > misspelled_words.txt
 
-(list misspelled in UK)
+(list misspelled in US and their top 5 suggestions)
 
-aspell --lang=en_GB list < yourfile.txt > misspelled_words.txt
+aspell --lang=en_US -a < yourfile.txt | grep '^&' | awk -F'[: ]+' '{split($0, arr, ": "); print $2, "->", arr[2]}' | cut -d ',' -f 1-5 > suggestions.txt
