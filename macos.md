@@ -201,4 +201,5 @@ aspell --lang=en_US list < main_aanda.tex > misspelled_words.txt
 aspell --lang=en_US -a < main_aanda.tex | grep '^&' | awk -F'[: ]+' '{split($0, arr, ": "); print $2, "->", arr[2]}' | cut -d ',' -f 1-5 > suggestions.txt
 
 (list unique misspelled in US and their top 5 suggestions)
+
 aspell --lang=en_US -a < main_aanda.tex | grep '^&' | awk -F'[: ]+' '{split($0, arr, ": "); print $2, "->", arr[2]}' | cut -d ',' -f 1-5 | sort | uniq > suggestions.txt
