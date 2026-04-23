@@ -23,6 +23,10 @@ make -j8
 
 make install
 
+echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
+
+echo 'export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+
 ### install gsl
 cd ..
 
@@ -74,15 +78,19 @@ cd
 
 git clone https://github.com/pfhopkins/gizmo-public.git
 
-## make DisPerSE
-unzip DisPerSE-master.zip
+cd gizmo-public/
 
-cd DisPerSE-master
+### select Operating System (OS) or add one. You can check your OS using 'uname -a' command in terminal
 
-mkdir build
+vi Makefile.systype
 
-cd build
+### make a copy of Config.sh file and edit according to your need
+cp Template-Config.sh Config.sh
 
-cmake ../
+### edit makefile (mainly add the paths to INCL and LIBS of the just installed packages)
+vi Makefile
 
-make install -j 4
+### then make to install
+make clean
+
+make
