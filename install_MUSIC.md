@@ -88,4 +88,4 @@ cd build/
 ccmake ..
 
 ### or add on the command line
-cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local -DFFTW3_INCLUDE_DIR=$HOME/local/include -DFFTW3_DOUBLE_SERIAL_LIBRARY=$HOME/local/lib/libfftw3.a -DFFTW3_DOUBLE_THREADS_LIBRARY=$HOME/local/lib/libfftw3_threads.a -DGSL_INCLUDE_DIR=$HOME/local/include/gsl -DGSL_LIBRARY=$HOME/local/lib/libgsl.a -DGSL_CBLAS_LIBRARY=$HOME/local/lib/libgslcblas.a -DGSL_CONFIG_EXECUTABLE=$HOME/local/bin/gsl-config
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/local -DFFTW3_INCLUDE_DIR=$HOME/local/include -DFFTW3_DOUBLE_SERIAL_LIBRARY=$HOME/local/lib/libfftw3.a -DFFTW3_DOUBLE_THREADS_LIBRARY=$HOME/local/lib/libfftw3_threads.a -DFFTW3_SINGLE_SERIAL_LIBRARY=$HOME/local/lib/libfftw3f.a -DFFTW3_SINGLE_THREADS_LIBRARY=$HOME/local/lib/libfftw3f_threads.a -DGSL_INCLUDE_DIR=$HOME/local/include/gsl -DGSL_LIBRARY=$HOME/local/lib/libgsl.a -DGSL_CBLAS_LIBRARY=$HOME/local/lib/libgslcblas.a -DGSL_CONFIG_EXECUTABLE=$HOME/local/bin/gsl-config
