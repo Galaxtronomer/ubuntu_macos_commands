@@ -87,6 +87,8 @@ vi Makefile.systype
 ### make a copy of Config.sh file and edit according to your need
 cp Template-Config.sh Config.sh
 
+vi Config.sh
+
 ### edit makefile (mainly add the paths to INCL and LIBS of the just installed packages)
 vi Makefile
 
