@@ -78,6 +78,10 @@ cd
 
 git clone https://bitbucket.org/ohahn/music.git
 
+### or
+
+https://github.com/cosmo-sims/MUSIC2.git
+
 cd music/
 
 mkdir build
