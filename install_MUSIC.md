@@ -75,7 +75,9 @@ make install
 
 ## download and install music
 cd
-###[
+
+### [
+
 git clone https://bitbucket.org/ohahn/music.git
 
 cd music/
@@ -86,7 +88,7 @@ git clone https://github.com/cosmo-sims/MUSIC2.git
 
 cd MUSIC2/
 
-###]
+### ]
 
 mkdir build
 
