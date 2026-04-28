@@ -14,6 +14,8 @@ wget https://github.com/HDFGroup/hdf5/releases/download/2.1.0/hdf5-2.1.0.tar.gz
 
 git clone https://github.com/KarypisLab/GKlib.git
 
+git clone https://github.com/KarypisLab/METIS.git
+
 ### install openmpi
 tar -zxvf openmpi-5.0.10.tar.gz
 
