@@ -97,7 +97,7 @@ make clean
 
 make
 
-## create link to lage files
-ln -s /public/home/ankit/gizmo-symlinks/spcool_tables ./spcool_tables
+## create link to large files
+ln -s $HOME/gizmo-symlinks/spcool_tables ./spcool_tables
 
-ln -s /public/home/ankit/gizmo-symlinks/TREECOOL ./TREECOOL
+ln -s $HOME/gizmo-symlinks/TREECOOL ./TREECOOL
