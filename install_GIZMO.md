@@ -96,3 +96,8 @@ vi Makefile
 make clean
 
 make
+
+## create link to lage files
+ln -s /public/home/ankit/gizmo-symlinks/spcool_tables ./spcool_tables
+
+ln -s /public/home/ankit/gizmo-symlinks/TREECOOL ./TREECOOL
