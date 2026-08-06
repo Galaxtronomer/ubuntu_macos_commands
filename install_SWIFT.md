@@ -3,7 +3,7 @@ mkdir -p $HOME/local
 mkdir manual_install
 cd manual_install/
 
-### download openmpi, gsl, fftw, hdf5
+### download openmpi, gsl, fftw, hdf5, GKlib, METIS
 wget https://download.open-mpi.org/release/open-mpi/v5.0/openmpi-5.0.10.tar.gz
 
 wget https://mirrors.ibiblio.org/gnu/gsl/gsl-2.8.tar.gz
