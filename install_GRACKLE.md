@@ -43,8 +43,8 @@ cd grackle/src/clib
 cp Make.mach.linux-gnu Make.mach.my-system
 
 ### Edit machine file - set paths for your system
-### # Change: LOCAL_HDF5_INSTALL = $(HOME)/local
-### # Change: MACH_INSTALL_PREFIX = $(HOME)/local
+##### # Change: LOCAL_HDF5_INSTALL = $(HOME)/local
+##### # Change: MACH_INSTALL_PREFIX = $(HOME)/local
 vi Make.mach.my-system
 
 ### clean any previous build files
