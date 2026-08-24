@@ -71,5 +71,3 @@ ls -la ~/local/include/grackle*
 ### verify library was installed
 ls -la ~/local/lib/libgrackle*
 
-# Restore PATH if you changed it
-# export PATH=$OLDPATH
